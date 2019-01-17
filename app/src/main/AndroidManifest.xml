@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cnt.nfc.mbds.fr.easycommandnfc">
+
+    <!-- for connecting internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- for NFC -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- just offer this app to nfc phone -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- activity for nfc tag -->
+        <activity android:name=".NFCtestfinal.Main2Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NFCtestfinal.ChoiceWriteActivity" />
+        <activity android:name=".NFCtestfinal.EraseActivity" />
+        <activity android:name=".NFCtestfinal.NfcBaseActivity" />
+        <activity android:name=".NFCtestfinal.ReadActivity" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/cnt.nfc.mbds.fr.easycommandnfc"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/cnt.nfc.mbds.fr.easycommandnfc"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".NFCtestfinal.WriteTextActivity" />
+    </application>
+
+</manifest>

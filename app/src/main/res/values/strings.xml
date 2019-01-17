@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">EasyCommandNFC</string>
+    <string name="btnValidate">Login</string>
+    <string name="pwd_txt">Password</string>
+    <string name="username_txt">Username</string>
+
+    <!-- tagreader-->
+    <string name="hello_world">Hello world!</string>
+    <string name="nfc_reading">Reading NFC&#8230;</string>
+    <string name="share">SHARE</string>
+    <string name="clear">CLEAR</string>
+    <string name="label_demo_nfc">Lecture et écriture de TAG NFC</string>
+    <string name="message">Veuillez écrire un message....</string>
+    <string name="UID">UID : </string>
+    <string name="NDEF">NDEF : </string>
+    <string name="notification">Creer une notification</string>
+    <string name="apropos">A propos</string>
+    <string name="quitter">Quitter</string>
+    <string name="retour">Retour</string>
+    <string name="mbds">MBDS</string>
+    <string name="read">Read</string>
+
+    <!-- for nfcceditor -->
+
+
+    <string name="readButton">Read</string>
+    <string name="writeButton">Write</string>
+    <string name="eraseButton">Erase</string>
+
+    <string name="textButton">Text</string>
+    <string name="appliButton">Application</string>
+    <string name="urlButton">URL</string>
+
+    <string name="title_activity_read">Read the TAG</string>
+    <string name="title_activity_choice_write">Write on the TAG</string>
+    <string name="title_activity_write_text">Write text</string>
+    <string name="title_activity_write_app">Choose application</string>
+    <string name="title_activity_write_url">Write URL</string>
+    <string name="title_activity_erase">Erase the TAG</string>
+
+    <string name="uri">http://www.</string>
+
+    <string name="scan_your_tag">Scan your tag</string>
+
+    <string name="about_title">About</string>
+    <string name="about_desc">
+        Travail réalisé par : \n
+            \t\t - BASSE Matthieu (matthieu.basse@poste.isima.fr) \n
+            \t\t - VOLGA Marvin (marvin.volga@poste.isima.fr) \n
+        Encadré par :\n
+            \t\t - LACOMME Philippe (placomme@isima.fr) ISIMA \n
+            \t\t - CHASSAING Maxime (chassain@isima.fr) ISIMA \n
+        Commentaire : \n
+            \t\t Ce travail a été réalisé dans le cadre d’un projet de 2ème année à l’ISIMA à Clermont Ferrand
+    </string>
+    <string name="about_action">About</string>
+    <string name="about_close">Close</string>
+
+    <string name="info_title">Information</string>
+    <string name="info_desc">
+        Ce programme est fourni sans aucune garantie, ni explicite ni implicite,
+        y compris les garanties de commercialisation ou d\'adaptation dans un but particulier.
+        Vous assumez tous les risques quant à la qualité et aux effets du programme.
+        \n\nLe code source du programme est librement téléchargeable à l\'adresse suivante :
+        \nhttp://www.isima.fr/~lacomme/ORWebServices/index.php?idx=8
+        \n\nCette application est destinée à montrer le savoir-faire des étudiants de l\'ISIMA.
+    </string>
+    <string name="info_cancel">Cancel</string>
+    <string name="info_ok">OK</string>
+    <string name="appbar_scrolling_view_behavior">for writing to tag</string>
+</resources>
